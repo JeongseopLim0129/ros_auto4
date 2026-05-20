@@ -1,0 +1,10 @@
+# ★ Fix: 절대 경로 → 상대 경로 변경
+# 기존 절대 경로(/home/student/test/...)는 다른 환경에서 맵을 아예 못 불러옴
+# map_server는 yaml 파일 위치 기준 상대 경로를 지원함
+image: my_map.pgm
+
+resolution: 0.05
+origin: [0.0, 0.0, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
